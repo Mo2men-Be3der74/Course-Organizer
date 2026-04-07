@@ -38,7 +38,7 @@ body::selection {
       width: 100%;
       position: fixed;
       border-bottom: 2px solid rgb(53, 37, 205, 0.1);
-      
+      z-index: 1000;
 }
 
 .navbar .logo {
@@ -173,6 +173,7 @@ body::selection {
       justify-content: center;
       border-radius: 12px;
       font-weight: bolder;
+      letter-spacing: 1.2px;
 }
 
 .info .current .course-name {
@@ -232,7 +233,7 @@ body::selection {
       color: var(--surface-color);
       font-weight: bold;
       position: relative;
-      top: -5px;
+      top: -10px;
 }
 
 /* RECENT */
@@ -374,4 +375,36 @@ body::selection {
       width: 27px;
       height: 30px;
       cursor: pointer;
+}
+
+footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 281px;
+      gap: 20px;
+      padding: 48px;
+      background-color: var(--surface-color);
+      width: 100%;
+}
+
+footer #quote-icon {
+      font-size: 48px;
+      color: rgb(53, 37, 205, 0.3);
+}
+
+footer .quote-text {
+      font-size: 45px;
+      color: #464555;
+      text-decoration: none;
+      font-weight: 100;
+      font-family: "Monsieur La Doulaise", cursive;
+}
+
+footer .name {
+      font-size: 12px;
+      color: rgb(70, 69, 85, 0.5);
+      text-decoration: none;
+      letter-spacing: 1.2px;
 }
