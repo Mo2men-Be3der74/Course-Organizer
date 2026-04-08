@@ -236,6 +236,29 @@ body::selection {
       top: -10px;
 }
 
+.info .streak .streak-bottom {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+}
+
+.info .streak .stock {
+      font-size: 16px;
+      width: 36px;
+      height: 28px;
+      padding: 8px;
+      background-color: #5d51d7;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--surface-color);
+      position: relative;
+
+}
+
 /* RECENT */
 
 .recent {
@@ -252,6 +275,7 @@ body::selection {
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
+      align-items: center;
 }
 
 .recent .recent-head .recent-title {
@@ -387,6 +411,7 @@ footer {
       padding: 48px;
       background-color: var(--surface-color);
       width: 100%;
+      text-align: center;
 }
 
 footer #quote-icon {
@@ -400,6 +425,7 @@ footer .quote-text {
       text-decoration: none;
       font-weight: 100;
       font-family: "Monsieur La Doulaise", cursive;
+      text-wrap: wrap;
 }
 
 footer .name {
