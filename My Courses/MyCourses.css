@@ -27,6 +27,10 @@ body::selection {
       color: var(--surface-color);
 }
 
+a, a:link, a:visited, a:hover, a:active {
+      text-decoration: none;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -218,6 +222,7 @@ body::selection {
       align-items: center;
       margin-left: 32px;
       gap: 8px;
+      margin-bottom: 48px;
 }
 
 .radio label {
@@ -248,4 +253,237 @@ body::selection {
 .radio input[type="radio"] + label:hover {
       background-color: #d4d9f2;
       transition: all 0.2s ease;
+}
+
+.radio input[type="radio"]:checked + label:hover {
+      background-color: var(--primary-color);
+      color: var(--surface-color);
+      transition: all 0.2s ease;
+}
+
+/* COURSES */
+
+
+.courses {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 32px;
+      width: calc(100% - 64px);
+      margin: 0 32px;
+      height: 840px;
+}
+    
+.course-1 {
+      grid-column: span 2 / span 2;
+      display: grid;
+      grid-template-columns: 236.8px 1fr;
+      grid-template-rows: 1fr;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: var(--card-color);
+      cursor: pointer;
+      transition: all 0.2s ease;
+}
+
+.course-1:hover {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      transform: scale(1.02);
+      transition: all 0.2s ease;
+}
+
+.course-1 .type {
+      margin-bottom: 32px;
+      color: var(--primary-color);
+      font-size: 12px;
+      font-weight: bold;
+}
+
+.course-1 .image {
+      background-image: url("/photos/data-server-racks-hub-room-with-big-data-computer-center-blue-interior-hosting-storage-hardware.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+}
+
+.course-1 .course-info {
+      display: flex;
+      flex-direction: column;
+      padding: 32px;
+      justify-content: space-between;
+}
+
+.course-1 .top {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+}
+
+.course-1 .course-info .course-title {
+      font-size: 24px;
+      font-weight: bold;
+      text-wrap: wrap;
+      margin-bottom: 20px;
+}
+
+.course-1 .course-info .description {
+      font-size: 14px;
+      color: var(--hover-color);
+} 
+
+.course-1 .time-left {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--primary-color);
+}
+
+.course-1 .time-left .left {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5px;
+}
+
+.course-2 {
+      grid-column-start: 3;
+}
+
+.course-2 .image {
+      background-image: url("/photos/computer-desktop-screen-table.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+}
+
+.course-3 .image {
+      background-image: url("/photos/stock-market-chart-virtual-screen-with-woman-s-hand-digital-remix.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+}
+
+.course-4 .image {
+      background-image: url("/photos//chris-ried-ieic5Tq8YMk-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+}
+
+.course-3 {
+      grid-column-start: 4;
+}
+
+.course-4 {
+      grid-row-start: 2;
+}
+
+.grow {
+      grid-row-start: 2;
+}
+
+.courses .course-card {
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: var(--card-color);
+      cursor: pointer;
+      transition: all 0.2s ease;
+}
+
+.courses .course-card:hover {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      transform: scale(1.02);
+      transition: all 0.2s ease;
+}
+
+.courses .course-card .type {
+      font-size: 12px;
+      color: var(--primary-color);
+      font-weight: bold;
+      margin-bottom: 22px;
+}
+
+.courses .course-card .title {
+      font-size: 18px;
+      font-weight: bold;
+}
+
+.courses .course-card .time-left {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--primary-color);
+}
+
+.courses .course-card .image {
+      width: 100%;
+      height: 192px;
+}
+
+.courses .course-card .course-info {
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      justify-content: space-between;
+      flex: 1;
+}
+
+.courses .grow {
+      background-color: var(--card-color);
+      padding: 92px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+}
+
+.courses .grow .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      font-size: 20px;
+      color: var(--primary-color);
+      background-color: #d3e4fe;
+      border-radius: 12px;
+      margin-bottom: 16px;
+}
+
+.courses .grow .title {
+      font-size: 18px;
+      color: var(--text-color);
+      font-weight: bold;
+      margin-bottom: 8px;
+}
+
+.courses .grow .small {
+      font-size: 14px;
+      color: var(--hover-color);
+      text-wrap: wrap;
+      text-align: center;
+      margin-bottom: 24px;
+}
+
+.courses .grow .button {
+      background-color: var(--primary-color);
+      color: var(--surface-color);
+      width: 170.39px;
+      height: 36px;
+      border-radius: 12px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.courses .grow .button a:visited {
+      text-decoration: none;
+      color: var(--surface-color);
 }
