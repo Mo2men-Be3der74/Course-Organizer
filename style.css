@@ -26,6 +26,8 @@ body::selection {
       color: var(--surface-color);
 }
 
+/* HOME */
+
 /* NAVBAR */
 
 .navbar {
@@ -434,3 +436,22 @@ footer .name {
       text-decoration: none;
       letter-spacing: 1.2px;
 }
+
+/* My Courses */
+
+header {
+      width: 1216px;
+      height: 40px;
+      margin: 0 32px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+}
+
+header .head {
+      font-size: 36px;
+      font-weight: bold;
+      color: var(--hover-color);
+      text-decoration: none;
+}
+
