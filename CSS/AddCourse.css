@@ -1,0 +1,349 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html {
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+}
+
+:root {
+      --surface-color: #f8f9ff;
+      --primary-color: #3525cd;
+      --hover-color: #0B1C30;
+      --card-color: #e6eafc;
+      --text-color: #0B1C30;
+}
+
+body {
+      font-family: "manrope", sans-serif;
+      background-attachment: fixed;
+      background-color: var(--surface-color);
+}
+
+body::selection {
+      background-color: var(--primary-color);
+      color: var(--surface-color);
+}
+
+a, a:link, a:visited, a:hover, a:active {
+      text-decoration: none;
+}
+
+/* NAVBAR */
+
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+      background-color: var(--surface-color);
+      height: 64px;
+      width: 100%;
+      position: fixed;
+      border-bottom: 2px solid rgb(53, 37, 205, 0.1);
+      z-index: 1000;
+}
+
+.navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+}
+
+.navbar .navbar-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      left: -25px;
+}
+
+.navbar .nav-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+}
+
+.navbar a {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-size: 16px;
+      font-weight: 500;
+      transition: color ease 0.2s;
+      display: flex;
+      align-items: center;
+      transition: all 0.2s ease;
+}
+
+.navbar a:visited {
+      text-decoration: none;
+}
+
+.navbar .nav-links a:hover {
+      color: #191158;
+      text-decoration: none;
+      transition: color ease 0.2s;
+      background-color: var(--card-color);
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+}
+
+.navbar .navbar-links a.active {
+      text-decoration: none;
+      transition: color ease 0.2s;
+      background-color: var(--card-color);
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+}
+
+.navbar .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: var(--primary-color);
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 18px;
+}
+
+.navbar .right i:hover {
+      color: #191158;
+}
+
+/* header */
+
+.header {
+      margin-top: 120px;
+      padding: 32px;
+      width: 100%;
+      height: 40px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--surface-color);
+}
+
+.header .head {
+      font-size: 60px;
+      font-weight: bold;
+      color: var(--primary-color);
+      text-decoration: none;
+      margin-bottom: 10px;
+}
+
+.header .small {
+      font-size: 16px;
+      color: #464555;
+      text-wrap: wrap;
+      text-decoration: none;
+}
+
+/* content */
+
+.content {
+      margin-top: 40px;
+      display: flex;
+      height: 692px;
+      width: 100%;
+      padding: 40px;
+      justify-content: center;
+      gap: 60px;
+}
+
+.content .features {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+}
+
+.content .features .feature {
+      width: 600px;
+      height: 112px;
+      display: flex;
+      align-items: flex-start;
+      background-color: var(--card-color);
+      align-items: center;
+      padding: 24px;
+      border-radius: 24px;
+      transition: all 0.2s ease;
+}
+
+.content .features .feature:hover {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      transform: scale(1.02);
+      transition: all 0.2s ease;
+}
+
+.content .features .feature .icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: -5px;
+      background-color: #c7ccfa;
+      border-radius: 8px;
+      margin-right: 15px;
+}
+
+.content .features .feature .text {
+      display: flex;
+      flex-direction: column;
+}
+
+.content .features .feature .text .title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: var(--hover-color);
+}
+
+.content .features .feature .text .description {
+      font-size: 14px;
+      line-height: 20px;
+      text-wrap: wrap;
+      color: var(--hover-color);
+}
+
+/* form */
+
+.content .form {
+      width: 802.67px;
+      height: 682px;
+      display: flex;
+      flex-direction: column;
+      padding: 32px;
+      padding-bottom: 48px;
+      gap: 32px;
+      background-color: var(--card-color);
+      border-radius: 28px;
+}
+
+.content .form .input {
+      display: flex;
+      flex-direction: column;
+      height: 79px;
+      gap: 8px;
+}
+
+.content .form .input label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      line-height: 16px;
+}
+
+.content .form .input input {
+      width: 100%;
+      height: 55px;
+      background-color: #d3e4fe;
+      border-radius: 8px;
+      padding: 16px 18px;
+      font-size: 16px;
+      border: none;
+}
+
+.content .form .input input:focus {
+      outline: none;
+      border: none;
+}
+
+.content .form .date-container {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      gap: 24px;
+}
+
+.content .form .date-container .info {
+      width: 100%;
+      height: 55px;
+      align-self: flex-end;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+      background-color: var(--surface-color);
+      border-radius: 8px;
+}
+
+.content .form .date-container .info .icon {
+      color: var(--primary-color);
+      font-size: 12px;
+
+}
+
+.content .form .date-container .date {
+      width: 100%;
+}
+
+.content .form .course-description {
+      width: 100%;
+      height: 168px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+}
+
+.content .form .course-description label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      line-height: 16px;
+}
+
+.content .form .course-description textarea {
+      width: 100%;
+      height: 128px;
+      background-color: #d3e4fe;
+      border-radius: 8px;
+      padding: 16px 18px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      resize: none;
+}
+
+.content .form .course-description textarea:focus {
+      border: none;
+      outline: none;
+}
+
+.content .form button {
+      width: 100%;
+      height: 55px;
+      background-color: var(--primary-color);
+      border-radius: 8px;
+      padding: 16px 18px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      color: var(--surface-color);
+      transition: all 0.2s ease;
+}
+
+.content .form button .icon {
+      margin-left: 5px;
+}
+
+.content .form button:hover {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      transform: scale(1.02);
+      transition: all 0.2s ease;
+}

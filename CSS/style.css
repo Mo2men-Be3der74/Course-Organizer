@@ -96,6 +96,15 @@ body::selection {
       transition: all 0.2s ease;
 }
 
+.navbar .navbar-links a.active {
+      text-decoration: none;
+      transition: color ease 0.2s;
+      background-color: var(--card-color);
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+}
+
 .navbar .right {
       display: flex;
       align-items: center;
