@@ -80,6 +80,7 @@ body::selection {
       display: flex;
       align-items: center;
       transition: all 0.2s ease;
+      padding: 2px;
 }
 
 .navbar a:visited {
@@ -97,12 +98,13 @@ body::selection {
 }
 
 .navbar .navbar-links a.active {
-      text-decoration: none;
-      transition: color ease 0.2s;
-      background-color: var(--card-color);
-      padding: 4px 8px;
-      border-radius: 4px;
+      color: var(--primary-color);
+      border-bottom: solid 2px var(--primary-color) ;
       transition: all 0.2s ease;
+}
+
+.navbar .navbar-links a.active:hover {
+      border: none;
 }
 
 .navbar .right {
