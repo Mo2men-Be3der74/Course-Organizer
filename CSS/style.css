@@ -326,21 +326,21 @@ body::selection {
 }
 
 #course-1 .course-img {
-      background-image: url("/photos/tablet-minimalist-white-desk-with-office-supplies.jpg");
+      background-image: url("../photos/tablet-minimalist-white-desk-with-office-supplies.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
 }
 
 #course-2 .course-img {
-      background-image: url("/photos/caleb-woods-fulXJYIvRi8-unsplash.jpg");
+      background-image: url("../photos/caleb-woods-fulXJYIvRi8-unsplash.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
 }
 
 #course-3 .course-img {
-      background-image: url("/photos/chris-ried-ieic5Tq8YMk-unsplash.jpg");
+      background-image: url("../photos/chris-ried-ieic5Tq8YMk-unsplash.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;

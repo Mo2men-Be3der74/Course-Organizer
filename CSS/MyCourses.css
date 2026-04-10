@@ -300,7 +300,7 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 .course-1 .image {
-      background-image: url("/photos/data-server-racks-hub-room-with-big-data-computer-center-blue-interior-hosting-storage-hardware.jpg");
+      background-image: url("../photos/data-server-racks-hub-room-with-big-data-computer-center-blue-interior-hosting-storage-hardware.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -352,21 +352,21 @@ a, a:link, a:visited, a:hover, a:active {
 }
 
 .course-2 .image {
-      background-image: url("/photos/computer-desktop-screen-table.jpg");
+      background-image: url("../photos/computer-desktop-screen-table.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
 }
 
 .course-3 .image {
-      background-image: url("/photos/stock-market-chart-virtual-screen-with-woman-s-hand-digital-remix.jpg");
+      background-image: url("../photos/stock-market-chart-virtual-screen-with-woman-s-hand-digital-remix.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
 }
 
 .course-4 .image {
-      background-image: url("/photos//chris-ried-ieic5Tq8YMk-unsplash.jpg");
+      background-image: url("../photos//chris-ried-ieic5Tq8YMk-unsplash.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
