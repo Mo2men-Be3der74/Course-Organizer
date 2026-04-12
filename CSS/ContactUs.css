@@ -175,6 +175,13 @@ body::selection {
       background-color: var(--card-color);
       border-radius: 16px;
       margin-bottom: 40px;
+      transition: all 0.2s ease;
+}
+
+.content .info .cards .card:hover {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      transform: scale(1.02);
+      transition: all 0.2s ease;
 }
 
 .content .info .cards .card i {
