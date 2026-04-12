@@ -1,0 +1,311 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html {
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+}
+
+:root {
+      --surface-color: #f8f9ff;
+      --primary-color: #3525cd;
+      --hover-color: #0B1C30;
+      --card-color: #e6eafc;
+      --text-color: #0B1C30;
+}
+
+body {
+      font-family: "manrope", sans-serif;
+      background-color: var(--surface-color);
+}
+
+body::selection {
+      background-color: var(--primary-color);
+      color: var(--surface-color);
+}
+
+/* HOME */
+
+/* NAVBAR */
+
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px;
+      background-color: var(--surface-color);
+      height: 64px;
+      width: 100%;
+      position: fixed;
+      border-bottom: 2px solid rgb(53, 37, 205, 0.1);
+      z-index: 1000;
+}
+
+.navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+}
+
+.navbar .navbar-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      left: -25px;
+}
+
+.navbar .nav-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+}
+
+.navbar a {
+      text-decoration: none;
+      color: var(--primary-color);
+      font-size: 16px;
+      font-weight: 500;
+      transition: color ease 0.2s;
+      display: flex;
+      align-items: center;
+      transition: all 0.2s ease;
+      padding: 2px;
+}
+
+.navbar a:visited {
+      text-decoration: none;
+}
+
+.navbar .nav-links a:hover {
+      color: #191158;
+      text-decoration: none;
+      transition: color ease 0.2s;
+      background-color: var(--card-color);
+      padding: 4px 8px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+}
+
+.navbar .navbar-links a.active {
+      color: var(--primary-color);
+      border-bottom: solid 2px var(--primary-color) ;
+      transition: all 0.2s ease;
+}
+
+.navbar .navbar-links a.active:hover {
+      border: none;
+}
+
+.navbar .right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: var(--primary-color);
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 18px;
+}
+
+.navbar .right i:hover {
+      color: #191158;
+}
+
+/* content */
+
+.content {
+      margin-top: 120px;
+      display: inline-flex;
+      flex-direction: row;
+      padding: 0 24px;
+      gap: 48px;
+      justify-content: center;
+      width: 100%;
+}
+
+.content .info {
+      display: flex;
+      flex-direction: column;
+      width: 592px;
+}
+
+.content .info .head1 {
+      font-size: 60px;
+      font-weight: bolder;
+      color: var(--text-color);
+}
+
+.content .info .head2 {
+      font-size: 60px;
+      font-weight: bolder;
+      color: var(--primary-color);
+}
+
+.content .info .description {
+      margin-top: 16px;
+      margin-bottom: 40px;
+      font-size: 18px;
+      color: var(--hover-color);
+}
+
+.content .info .cards {
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      justify-content: space-between;
+}
+
+.content .info .cards .card {
+      height: 166px;
+      width: 288px;
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      background-color: var(--card-color);
+      border-radius: 16px;
+      margin-bottom: 40px;
+}
+
+.content .info .cards .card i {
+      font-size: 20px;
+      width: 48px;
+      height: 48px;
+      background-color: #D3E4FE;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      color: var(--primary-color);
+}
+
+.content .info .cards .card .title {
+      font-size: 18px;
+      font-weight: bold;
+}
+
+.content .info .card .description {
+      font-size: 16px;
+      color: #464555;
+}
+
+.content .info .image {
+      width: 100%;
+      height: 288px;
+      background-image: url("/photos/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+      background-position: center;
+      background-size: cover;
+      overflow: hidden;
+      border-radius: 16px;
+}
+
+/* form */
+
+.content form {
+      height: 750px;
+      width: 592px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--card-color);
+      border-radius: 24px;
+}
+
+.content form .title {
+      font-size: 30px;
+      color: var(--text-color);
+      font-weight: bold;
+      margin-bottom: 32px;
+}
+
+.content form .input {
+      display: flex;
+      flex-direction: column;
+      height: 79px;
+      gap: 9px;
+      margin-bottom: 24px;
+}
+
+.content form .message.input {
+      height: auto;
+}
+
+.content form .input label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      line-height: 16px;
+}
+
+.content form .input input {
+      width: 100%;
+      height: 55px;
+      background-color: #d3e4fe;
+      border-radius: 8px;
+      padding: 16px 18px;
+      font-size: 16px;
+      border: none;
+}
+
+.content form .input input:focus {
+      outline: none;
+      border: none;
+}
+
+.content form .input .textarea {
+      width: 100%;
+      height: 180px !important;
+      padding: 20px;
+      background-color: #d3e4fe;
+      border-radius: 8px;
+      padding: 16px 18px;
+      font-size: 16px;
+      resize: none;
+      border: none;
+      outline: none;
+}
+
+.content form .input textarea:focus {
+      border: none;
+      outline: none;
+}
+
+.content form .button {
+      width: 100%;
+      height: 68px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+      text-decoration: none;
+      color: var(--surface-color);
+      background-color: var(--primary-color);
+      border-radius: 8px;
+      margin-bottom: 32px;
+}
+
+.content form .button:visited {
+      text-decoration: none;
+      color: var(--surface-color);
+}
+
+.content form .mes {
+      font-size: 14px;
+      text-decoration: none;
+      display: flex;
+      text-align: center;
+      text-wrap: wrap;
+      gap: 0;
+}
