@@ -125,6 +125,10 @@ a, a:link, a:visited, a:hover, a:active {
       color: #191158;
 }
 
+.navbar-bottom {
+      display: none;
+}
+
 /* header */
 
 .header {

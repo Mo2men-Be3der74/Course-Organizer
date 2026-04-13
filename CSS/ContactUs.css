@@ -122,6 +122,10 @@ body::selection {
       color: #191158;
 }
 
+.navbar-bottom {
+      display: none;
+}
+
 /* content */
 
 .content {
@@ -338,6 +342,7 @@ body::selection {
       font-size: 14px;
       color: #464555;
       background-color: var(--card-color);
+      margin-top: 50px;
 }
 
 /* phones responsive */
