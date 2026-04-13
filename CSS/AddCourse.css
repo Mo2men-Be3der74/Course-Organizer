@@ -464,7 +464,7 @@ a, a:link, a:visited, a:hover, a:active {
       /* content */
 
       .content {
-            flex-direction: column;
+            flex-direction: column-reverse;
             justify-content: center;
             height: auto;
             padding: 0 24px;
@@ -482,6 +482,8 @@ a, a:link, a:visited, a:hover, a:active {
             background-color: transparent;
             font-size: 20px;
             color: var(--primary-color);
+            position: relative;
+            top: 2px;
       }
 
       .content .form {
