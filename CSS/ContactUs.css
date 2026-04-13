@@ -348,5 +348,127 @@ body::selection {
 /* phones responsive */
 
 @media (max-width: 767px) {
+      body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+      }
       
+      /* navbar */
+
+      .navbar {
+            padding: 16px 25px;
+            height: auto;
+      }
+
+      .navbar .navbar-links {
+            display: none;
+            flex-direction: row;
+            flex-wrap: wrap;
+      }
+
+      .navbar .nav-links a {
+            padding: 5px;
+            font-size: 12px;
+      }
+
+      .navbar-bottom {
+            display: block !important;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background-color: var(--surface-color);
+            border-top: 1px solid rgb(53, 37, 205, 0.1);
+            z-index: 1000;
+      }
+
+      .navbar-bottom .nav-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            width: 100%;
+            background-color: var(--surface-color);
+      }
+
+      .navbar-bottom ul {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 12px 23px;
+            gap: 14px;
+      }
+      
+      .navbar-bottom ul li a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-color);
+            text-wrap: nowrap;
+      }
+
+      .navbar-bottom ul li a.active {
+            color: var(--primary-color);
+            background-color: var(--card-color);
+            padding: 4px 4px;
+            border-radius: 12px;
+      }
+
+      .navbar-bottom ul li a i {
+            font-size: 20px;
+      }
+
+      /* content */
+
+      .content {
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+      }
+
+      .content .info {
+            width: 100%;
+            flex-direction: column;
+      }
+
+      .content .info .cards {
+            flex-direction: column;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 100%;
+      }
+
+      .content .info .cards .card {
+            width: 100%;
+            margin: 0;
+      }
+
+      .content .info .image {
+            display: none;
+      }
+
+      /* form */
+
+      .content form {
+            height: auto;
+            width: 100%;
+      }
+
+      /* footer */
+
+      .footer {
+            margin-bottom: 70px;
+      }
 }
