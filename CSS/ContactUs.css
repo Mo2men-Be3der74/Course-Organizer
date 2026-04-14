@@ -345,7 +345,7 @@ body::selection {
       margin-top: 50px;
 }
 
-/* phones responsive */
+/* mobile responsive */
 
 @media (max-width: 767px) {
       body, html {
@@ -471,4 +471,52 @@ body::selection {
       .footer {
             margin-bottom: 70px;
       }
+}
+
+/* tablet responsive */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+      body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+      }
+
+      /* content */
+
+      .content {
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+      }
+
+      .content .info {
+            width: 100%;
+            flex-direction: column;
+      }
+
+      .content .info .cards {
+            flex-direction: row;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            margin-bottom: 30px;
+      }
+
+      .content .info .cards .card {
+            width: 100%;
+            margin: 0;
+      }
+
+      /* form */
+
+      .content form {
+            height: auto;
+            width: 100%;
+      }
+
+      
 }

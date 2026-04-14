@@ -470,6 +470,8 @@ header .head {
       text-decoration: none;
 }
 
+/* mobile responsive */
+
 @media (max-width: 767px) {
       body, html {
             margin: 0;
@@ -628,5 +630,21 @@ header .head {
 
       .recent .courses {
             flex-direction: column;
+      }
+}
+
+/* tablet responsive */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+      /* info */
+      .info {
+            padding: 32px;
+            margin-top: 20px;
+      }
+
+      /* recent */
+
+      .recent {
+            padding: 32px;
       }
 }
