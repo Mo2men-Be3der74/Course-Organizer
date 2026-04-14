@@ -170,7 +170,6 @@ body::selection {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      /* gap: 16px; */
       background-color: #e6eafc;
       padding: 32px;
       border-radius: 10px;

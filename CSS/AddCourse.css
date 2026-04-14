@@ -231,7 +231,7 @@ a, a:link, a:visited, a:hover, a:active {
 
 .content .form {
       width: 802.67px;
-      height: 682px;
+      height: 738px;
       display: flex;
       flex-direction: column;
       padding: 32px;
@@ -239,6 +239,7 @@ a, a:link, a:visited, a:hover, a:active {
       gap: 32px;
       background-color: var(--card-color);
       border-radius: 28px;
+      margin-bottom: 20px;
 }
 
 .content .form .input {
@@ -253,6 +254,8 @@ a, a:link, a:visited, a:hover, a:active {
       font-weight: 700;
       letter-spacing: 1.2px;
       line-height: 16px;
+      position: relative;
+      left: 3px;
 }
 
 .content .form .input input {
@@ -318,6 +321,8 @@ a, a:link, a:visited, a:hover, a:active {
       font-weight: 700;
       letter-spacing: 1.2px;
       line-height: 16px;
+      position: relative;
+      left: 3px;
 }
 
 .content .form .course-description textarea {
@@ -489,6 +494,7 @@ a, a:link, a:visited, a:hover, a:active {
       .content .form {
             width: 100%;
             height: auto;
+            margin-bottom: 0;
       }
 
       .content .form .date-container {
